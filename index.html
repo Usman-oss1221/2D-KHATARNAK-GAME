@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>2D Block World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <!-- Hotbar -->
+  <div id="hotbar"></div>
+
+  <!-- Quest Panel -->
+  <div id="quest-panel"></div>
+
+  <!-- Inventory -->
+  <div id="inventory" style="display:none;">
+    <div id="inv-header">
+      <span>🎒 Inventory</span>
+      <button id="inv-close" onclick="toggleInventory()">✕</button>
+    </div>
+    <div id="inv-grid"></div>
+    <div id="inv-hotbar-label">Hotbar</div>
+  </div>
+
+  <!-- Death Screen -->
+  <div id="death-screen" style="display:none;">
+    <div id="death-box">
+      <div id="death-title">💀 You Died</div>
+      <div id="death-sub">The mobs got you this time...</div>
+      <button id="respawn-btn" onclick="respawn()">⚔ Respawn</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
